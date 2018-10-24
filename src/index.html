@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Header -->
+	<header class="app-header">
+		<ul class="header-icons">
+			<li class="circle orange"></li>
+			<li class="circle yellow"></li>
+			<li class="circle blue"></li>
+		</ul>
+		<div class="header-title">
+			<i class="fas fa-book header-title-icon"></i>
+			<span>MyBookApp</span>
+		</div>
+		<nav class="header-nav">
+			<li><button class="header-nav-button">Help Center</button></li>
+			<li><button class="header-nav-button">Our Support</button></li>
+			<li>
+				<button class="header-nav-button selected">
+					<img src="images/avatar-01.png" class="header-nav-avatar">
+					<span class="header-nav-button-name">John Doe</span>
+					<i class="fas fa-chevron-circle-down"></i>
+				</button>
+			</li>
+		</nav>
+	</header>
+	<!-- Main -->
+	<main class="app-main">
+		<!-- Aside -->
+		<aside class="app-main-aside">
+			<section class="app-main-aside-sections">
+				<button class="app-main-aside-section-button"><i class="fas fa-plus"></i>Add a Book</button>
+			</section>
+			<section class="app-main-aside-sections app-main-aside-section-with-nav">
+				<nav class="app-main-aside-section-nav">
+					<li>
+						<span class="nav-item-span"><i class="fas fa-book"></i></span>
+						<a href="#" class="nav-item-link">Now Reading</a>
+					</li>
+					<li class="selected">
+						<span class="nav-item-span"><i class="fas fa-globe-asia"></i></span>
+						<a href="#" class="nav-item-link selected">Browse</a>
+					</li>
+					<li>
+						<span class="nav-item-span"><i class="fas fa-shopping-cart"></i></span>
+						<a href="#" class="nav-item-link">Buy Books</a>
+					</li>
+					<li>
+						<span class="nav-item-span"><i class="fas fa-star"></i></span>
+						<a href="#" class="nav-item-link">Favourite Books</a>
+					</li>
+					<li>
+						<span class="nav-item-span"><i class="fas fa-th-list"></i></span>
+						<a href="#" class="nav-item-link">Wishlist</a>
+					</li>
+					<li>
+						<span class="nav-item-span"><i class="fas fa-clock"></i></span>
+						<a href="#" class="nav-item-link">History</a>
+					</li>
+				</nav>
+			</section >
+			<section class="app-main-aside-sections">
+				<nav class="app-main-aside-section-nav nav-label">
+					<li>
+						<span class="must_read_titles">Must Read Titles</span>
+					</li>
+					<li>
+						<span class="best_of_list">Best Of List</span>
+					</li>
+					<li>
+						<span class="classic_novel">Classic Novels</span>
+					</li>
+					<li>
+						<span class="non_fiction">Non Fiction</span>
+					</li>
+				</nav>
+			</section>
+			<section class="app-main-aside-sections">
+				<nav class="app-main-aside-section-nav ">
+					<li>
+						<i class="section-nav-icon far fa-clock"></i>
+						<section class="history-font">
+							<header>You added <span class="highlight">Fight Club</span> by <span class="highlight">Chuck Palahniuk</span> to your <span class="highlight">Must Read Title</span>.</header>
+							<time class="section-nav-time">24 minutes ago</time>
+						</section>
+					</li>
+					<li>
+						<i class="section-nav-icon far fa-clock"></i>
+						<section class="history-font">
+							<header>You added <span class="highlight">The Trial</span> by <span class="highlight">Franz Kafka</span> to your <span class="highlight">Must Read Titles</span>.</header>
+							<time class="section-nav-time">48 minutes ago</time>
+						</section>
+					</li>
+				</nav>
+			</section>
+		</aside>
+		<!-- Section -->
+		<section class="app-main-section">
+			<header class="app-main-section-header">
+				<span class="app-main-section-header-span">Browse Available Books</span>
+			</header>
+			<section class="app-main-section-section">
+				<nav class="app-main-section-nav">
+					<li class="app-main-section-nav-li app-main-section-nav-li--selected">All Books</li>
+					<li class="app-main-section-nav-li">Most Recent</li>
+					<li class="app-main-section-nav-li">Most Popular</li>
+					<li class="app-main-section-nav-li">Free Books</li>
+				</nav>
+				<section>
+					<input type="text" class="app-main-section-input" name="" placeholder="Enter Keywords">
+					<button class="app-main-section-input-btn"><i class="fas fa-search"></i></button>
+				</section>
+			</section>
+			<article class="app-main-section-article">
+				<figure class="article-figure">
+					<img src="images/book-cover-0.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Jewels of Nizam</header>
+						<p class="figure-p">by Geeta Devi</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-1.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Cakes & Bakes</header>
+						<p class="figure-p">by Sanjeev Kapoor</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-2.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Jamie’s Kitchen</header>
+						<p class="figure-p">by Jamie Oliver</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-3.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Inexpensive Family Meals</header>
+						<p class="figure-p">by Simon Holst</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-4.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Paleo Slow Cooking</header>
+						<p class="figure-p">by Chrissy Gower</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-5.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Cook Like an Italian</header>
+						<p class="figure-p">by Tobie Puttock</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-6.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Suneeta Vaswani</header>
+						<p class="figure-p">by Geeta Devi</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-7.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Jamie Does</header>
+						<p class="figure-p">by Jamie Oliver</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-8.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Jamie’s italy</header>
+						<p class="figure-p">by Jamie Oliver</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+				<figure class="article-figure">
+					<img src="images/book-cover-9.png" class="figure-img">
+					<figcaption>
+						<header class="figure-header">Vegetables Cookbook</header>
+						<p class="figure-p">by Matthew Biggs</p>
+						<footer class="figcaption-footer">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<i class="far fa-star"></i>
+						</footer>
+					</figcaption>
+				</figure>
+			</article>
+		</section>
+	</main>
+	<!-- Footer -->
+	<footer class="app-footer">
+		<button class="app-footer-button"><i class="fas fa-question-circle"></i></button>
+		<button class="app-footer-button selected"><i class="fas fa-cog"></i></button>
+	</footer>
+</body>
+</html>
