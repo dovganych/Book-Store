@@ -1,20 +1,16 @@
 .app-footer{
-	width: 100%;
-  height: 45px;
-  background-color: #2f364a;
+  width: 100%;
+  height: $h-f-height;
+  background-color: $h-f-backgraound;
   display: flex;
   justify-content: flex-end;
-}
-.app-footer-button{
-	width: 4%;
-	display: flex;
-  justify-content: center;
-  color: #fff;
-  background-color: #1f2637;
-  border: none;
+  button{
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #1f2637;
+    border: none;
+  }
 }
 
-.selected{
-	background-color: #15a4fa;
-	color: #fff;
-}

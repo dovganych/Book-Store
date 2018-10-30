@@ -7,100 +7,88 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
-	<!-- Header -->
 	<header class="app-header">
 		<ul class="header-icons">
-			<li class="circle orange"></li>
-			<li class="circle yellow"></li>
-			<li class="circle blue"></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
 		<div class="header-title">
-			<i class="fas fa-book header-title-icon"></i>
+			<i class="fas fa-book"></i>
 			<span>MyBookApp</span>
 		</div>
 		<nav class="header-nav">
-			<li><button class="header-nav-button">Help Center</button></li>
-			<li><button class="header-nav-button">Our Support</button></li>
+			<li><button>Help Center</button></li>
+			<li><button>Our Support</button></li>
 			<li>
-				<button class="header-nav-button selected">
-					<img src="images/avatar-01.png" class="header-nav-avatar">
-					<span class="header-nav-button-name">John Doe</span>
+				<button class="selected">
+					<img src="images/avatar-01.png">
+					<span>John Doe</span>
 					<i class="fas fa-chevron-circle-down"></i>
 				</button>
 			</li>
 		</nav>
 	</header>
-	<!-- Main -->
 	<main class="app-main">
-		<!-- Aside -->
-		<aside class="app-main-aside">
-			<section class="app-main-aside-sections">
-				<button class="app-main-aside-section-button"><i class="fas fa-plus"></i>Add a Book</button>
+		<aside>
+			<section>
+				<button class="aside-section-button"><i class="fas fa-plus"></i>Add a Book</button>
 			</section>
-			<section class="app-main-aside-sections app-main-aside-section-with-nav">
-				<nav class="app-main-aside-section-nav">
+			<section>
+				<nav class="aside-section-nav">
 					<li>
-						<span class="nav-item-span"><i class="fas fa-book"></i></span>
+						<span><i class="fas fa-book"></i></span>
 						<a href="#" class="nav-item-link">Now Reading</a>
 					</li>
 					<li class="selected">
-						<span class="nav-item-span"><i class="fas fa-globe-asia"></i></span>
-						<a href="#" class="nav-item-link selected">Browse</a>
+						<span><i class="fas fa-globe-asia"></i></span>
+						<a href="#" class="selected">Browse</a>
 					</li>
 					<li>
-						<span class="nav-item-span"><i class="fas fa-shopping-cart"></i></span>
-						<a href="#" class="nav-item-link">Buy Books</a>
+						<span><i class="fas fa-shopping-cart"></i></span>
+						<a href="#">Buy Books</a>
 					</li>
 					<li>
-						<span class="nav-item-span"><i class="fas fa-star"></i></span>
-						<a href="#" class="nav-item-link">Favourite Books</a>
+						<span><i class="fas fa-star"></i></span>
+						<a href="#">Favourite Books</a>
 					</li>
 					<li>
-						<span class="nav-item-span"><i class="fas fa-th-list"></i></span>
-						<a href="#" class="nav-item-link">Wishlist</a>
+						<span><i class="fas fa-th-list"></i></span>
+						<a href="#">Wishlist</a>
 					</li>
 					<li>
-						<span class="nav-item-span"><i class="fas fa-clock"></i></span>
-						<a href="#" class="nav-item-link">History</a>
-					</li>
-				</nav>
-			</section >
-			<section class="app-main-aside-sections">
-				<nav class="app-main-aside-section-nav nav-label">
-					<li>
-						<span class="must_read_titles">Must Read Titles</span>
-					</li>
-					<li>
-						<span class="best_of_list">Best Of List</span>
-					</li>
-					<li>
-						<span class="classic_novel">Classic Novels</span>
-					</li>
-					<li>
-						<span class="non_fiction">Non Fiction</span>
+						<span><i class="fas fa-clock"></i></span>
+						<a href="#">History</a>
 					</li>
 				</nav>
 			</section>
-			<section class="app-main-aside-sections">
-				<nav class="app-main-aside-section-nav ">
+			<section>
+				<nav class="aside-section-nav nav-label">
+					<li>Must Read Titles</li>
+					<li>Best Of List</li>
+					<li>Classic Novels</li>
+					<li>Non Fiction</li>
+				</nav>
+			</section>
+			<section>
+				<nav class="aside-section-nav">
 					<li>
-						<i class="section-nav-icon far fa-clock"></i>
-						<section class="history-font">
-							<header>You added <span class="highlight">Fight Club</span> by <span class="highlight">Chuck Palahniuk</span> to your <span class="highlight">Must Read Title</span>.</header>
-							<time class="section-nav-time">24 minutes ago</time>
-						</section>
+						<i class="far fa-clock"></i>
+						<div class="section-nav-div">
+							<header>You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Title</span>.</header>
+							<time>24 minutes ago</time>
+						</div>
 					</li>
 					<li>
-						<i class="section-nav-icon far fa-clock"></i>
-						<section class="history-font">
-							<header>You added <span class="highlight">The Trial</span> by <span class="highlight">Franz Kafka</span> to your <span class="highlight">Must Read Titles</span>.</header>
-							<time class="section-nav-time">48 minutes ago</time>
-						</section>
+						<i class="far fa-clock"></i>
+						<div class="section-nav-div">
+							<header>You added <span>The Trial</span> by <span>Franz Kafka</span> to your <span>Must Read Titles</span>.</header>
+							<time>48 minutes ago</time>
+						</div>
 					</li>
 				</nav>
 			</section>
 		</aside>
-		<!-- Section -->
 		<section class="app-main-section">
 			<header class="app-main-section-header">
 				<span class="app-main-section-header-span">Browse Available Books</span>
@@ -261,10 +249,9 @@
 			</article>
 		</section>
 	</main>
-	<!-- Footer -->
 	<footer class="app-footer">
-		<button class="app-footer-button"><i class="fas fa-question-circle"></i></button>
-		<button class="app-footer-button selected"><i class="fas fa-cog"></i></button>
+		<button><i class="fas fa-question-circle"></i></button>
+		<button class="selected"><i class="fas fa-cog"></i></button>
 	</footer>
 </body>
 </html>

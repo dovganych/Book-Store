@@ -1,13 +1,29 @@
 .app-header {
   width: 100%;
-  height: 45px;
-  background-color: #2f364a;
+  height: $h-f-height;
+  background-color: $h-f-backgraound;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #78829d;
+  color: $a-h-font-color;
   position: relative;
 }
+
+.header-icons{
+	display: flex;
+	padding-left: 1.5%;
+	li{
+		margin: 4px;
+		width: 10px;
+  	height: 10px;
+  	border-radius: 50%;
+  	list-style-type: none;
+  	&:first-child { background-color: #e76847; }
+		&:nth-child(2) { background-color: #52bea6; }
+		&:last-child { background-color: #fabf00; }
+	}
+}
+
 .header-title {
 	display: flex;
   height: 100%;
@@ -16,34 +32,9 @@
   margin-left: 20%;
   font-size: 12px;
   line-height: 2.17;
-}
-.header-title-icon{
-	margin-right: 10%;
-}
-
-.header-icons{
-	display: flex;
-	padding-left: 1.5%;
-}
-
-.header-icons li{
-	margin: 4px;
-}
-
-.circle{ 
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  list-style-type: none;
-}
-.orange{
-  background: #e76847;
-}
-.blue{
-  background: #52bea6;
-}
-.yellow{
-  background: #fabf00;
+  i{
+  	margin-right: 10%;
+  }
 }
 
 .header-nav{
@@ -54,50 +45,43 @@
 	list-style-type: none;
 	font-size: 13px;
 	line-height: 2;
-}
-
-.header-nav-button{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	height: 100%;
-	background-color: #2f364a;
-	color: #78829d;
-}
-
-.header-nav li:first-child:after{
-	content: '';
-	display: inline-block;
-	width: 4px;
-	height: 4px;
-	margin-left: 10px;
-	border-radius: 50%;
-	vertical-align: middle;
-	background-color: #19202e;
-}
-
-.header-nav-button-name{
-	width: 100px;
-}
-
-.header-nav li{
-	display: flex;
-  height: 100%;
-  align-items: center;
-  padding: 0 5px;
-
-}
-.header-nav li:last-of-type{
-	padding-right: 0;
-}
-
-.header-nav-avatar{
-	border: 2px solid #eef1f7;
-	border-radius: 50%;
-}
-
-.header-nav-button.selected > *{
-	margin: 0 5%;
-	padding-right: 0;
+	li{
+  	display: flex;
+  	height: 100%;
+  	align-items: center;
+  	padding: 0 5px;
+  	&:first-child:after{
+			content: '';
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			margin-left: 10px;
+			border-radius: 50%;
+			vertical-align: middle;
+			background-color: #19202e;
+		}
+		&:last-of-type{
+  		padding-right: 0;
+		}
+		button{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			height: 100%;
+			background-color: $h-f-backgraound;
+			color: $a-h-font-color;
+			img{
+				border: 2px solid #eef1f7;
+  			border-radius: 50%;
+			}
+			span{
+				width: 100px;
+			}
+		}
+		button.selected > *{
+			margin: 0 5%;
+  		padding-right: 0;
+		}
+	}
 }
